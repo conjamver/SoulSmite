@@ -1,0 +1,19 @@
+$primary:#2f3640;
+$primary-2:#353b48;
+$white: #ecf0f1;
+
+body{
+    background-color:$primary;
+}
+
+#character-creation{
+    background-color: $primary;
+    padding: 5% 0;
+}
+
+#character-form{
+    background-color: $primary-2;
+    color:$white;
+    border-radius:10px;
+    padding:5%;
+}
