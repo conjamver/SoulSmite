@@ -1,3 +1,3 @@
 # SoulSmite
 
-An RPG browser game. Turn Based. 
+A RPG browser game. Turn Based. 
