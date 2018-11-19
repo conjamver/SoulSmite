@@ -22,6 +22,8 @@
     
         <!--Enabling good view on mobile devices-->
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <title>SoulSmite</title>
     </head>
 
     <body>
@@ -36,33 +38,31 @@
                         <h2 class="text-center">Welcome Mortal</h2>
                         <!--Name Area-->
                         <div class="form-group">
-                            <label for="hero_name">What is your name:</label>
-                            <input type="text" class="form-control" id="hero_name" placeholder="e.g. Ned Stark">
+                            <label for="hero_name" ><strong>What is your name:</strong></label>
+                            <input type="text" maxlength="12" class="form-control" id="hero_name" placeholder="e.g. Ned Stark">
                         </div>
                         <!--Hero Selection area-->
-                        <label>Choose your class:</label>
-                        <div class="form-check">
-                            <label class="form-check-label">
-                                <input type="radio" class="form-check-input" name="class-select">Demon Slayer
-                            </label>
-                        </div>
-                        <div class="form-check">
-                            <label class="form-check-label">
-                                <input type="radio" class="form-check-input" name="class-select">Blood Thief
-                            </label>
+                        <label><strong>Choose your class:</strong></label>
+                        <div class="row">
+                            <!--Slayer-->
+                            <div class="col-3">
+                                <img class="img-fluid class-select" src="img/class/slayer.png">
+                            </div>
+                             <!--Thief-->
+                            <div class="col-3">
+                                <img class="img-fluid class-select" src="img/class/thief.png">
+                            </div>
+                            <div class="col-3">Img 3</div>
+                            <div class="col-3">Img 4</div>
                         </div>
                         <br>
                         <!--Hero details area-->
                         <div class="form-group">
                             <div class="row">
-                                <!--Profile image of the hero-->
-                                <div class="col-4">
-                                    <img class="img-fluid" src="https://via.placeholder.com/150">
-                                </div>
                                 <!--Stats and details about the hero-->
                                 <div class="col-8">
-                                    <h5>Demon slayer</h5>
-                                    <p>Born from a bloodline of warriors, you start with high health and decent damage. </p>
+                                    <h5><span id="class-title">Demon Slayer</span></h5>
+                                    <p><span id="class-description">Born from a bloodline of warriors, you start with high health and decent damage. </span></p>
                                
                                 </div>
                             </div>
@@ -75,7 +75,14 @@
             </div>
         </div>
         </article>
-
+        
+        <!--JAVASCRIPT CODE -->
+        <!--Controls the character creation GUI and content on the screen-->
+        <script src="js/characterCreation.js"></script>
+        
+        <footer>
+        Game icons by: game-icons.net
+        </footer>
     </body>
     
 </html>

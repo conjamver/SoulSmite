@@ -11,4 +11,14 @@ body {
   border-radius: 10px;
   padding: 5%; }
 
+/*Character selection*/
+.class-select {
+  opacity: 1;
+  transition: 0.25s; }
+
+.class-select:hover {
+  cursor: pointer;
+  opacity: 0.5;
+  transition: 0.25s; }
+
 /*# sourceMappingURL=main.css.map */
